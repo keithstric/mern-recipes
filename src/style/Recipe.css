@@ -1,0 +1,67 @@
+.recipePage h3 {
+	margin: 10px 0 0 0;
+}
+
+.recipeHeader {
+	margin-right: auto;
+	margin-bottom: 10px;
+}
+
+.formActionContainer {
+	padding: 10px 0;
+}
+
+.formActionButtonContainer {
+	border-radius: 5px;
+	overflow: hidden;
+}
+
+.formActionButtonContainer:hover:not(.disabled) {
+	box-shadow: 0px 5px 6px -3px rgba(0, 0, 0, 0.4);
+}
+
+.formActionButtonContainer button {
+	border-radius: 5px;
+	border: 1px solid #007bff;
+	padding: 8px;
+	font-size: 14px;
+	font-weight: 500;
+	background-color: #007bff;
+	color: white;
+}
+
+.formActionButtonContainer button:disabled {
+	border: 1px solid #cfcfcf;
+	background-color: #cfcfcf;
+	color: black;
+	opacity: 0.7;
+}
+
+.ingredient {
+	align-items: center;
+}
+
+.ingredient .formRow{
+	margin-right: 10px;
+	flex-basis: 30%;
+	flex-wrap: wrap;
+}
+
+.smallActionButtonContainer {
+	border-radius: 5px;
+	overflow: hidden;
+	margin-top: 4px;
+}
+
+.smallActionButtonContainer button {
+	border-radius: 5px;
+	border: 1px solid #007bff;
+	font-size: 14px;
+	background-color: #007bff;
+	color: white;
+}
+
+.smallActionButtonContainer button .svg-inline--fa.fa-fw {
+	height: 12px;
+	width: 12px;
+}

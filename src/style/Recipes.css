@@ -1,0 +1,36 @@
+.pageActionContainer {
+	margin-bottom: 10px;
+}
+
+.recipeListItem {
+	border: 1px solid #afafaf;
+	justify-content: flex-start;
+	align-items: center;
+	margin-bottom: 5px;
+}
+
+.recipeListItem:hover {
+	cursor: pointer;
+	box-shadow: 0px 5px 6px -3px rgba(0, 0, 0, 0.4);
+}
+
+.recipeListItem .react-ripples {
+	width: 100%;
+	height: 100%;
+}
+
+.recipeItemTextContainer {
+	padding: 10px;
+	width: 100%;
+}
+
+.recipeItemTextContainer span {
+	font-weight: 400;
+	flex-grow: 1;
+}
+
+.recipeItemTextContainer span.recipeTitle {
+	font-weight: 500;
+	flex-basis: 150px;
+	flex-grow: 0;
+}

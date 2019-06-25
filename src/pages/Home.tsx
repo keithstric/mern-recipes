@@ -1,9 +1,17 @@
 import React, { Component } from 'react';
-import { withAppContext } from '../components/AppContext';
+import { withAppContext, IAppContext } from '../components/AppContext';
+import { RouteComponentProps } from 'react-router';
 
-class HomePage extends Component {
+interface IHomePageProps extends RouteComponentProps{
+	appContext: IAppContext;
+}
+class HomePage extends Component<IHomePageProps> {
 	constructor(props: any) {
 		super(props);
+	}
+
+	componentDidMount() {
+		this.props.appContext.setHeader('M.E.R.N Recipes');
 	}
 
 	render() {

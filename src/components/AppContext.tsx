@@ -1,18 +1,20 @@
 import React, { Component } from 'react';
 
 export interface IAppContext {
-	user: any;
-	header: string;
-	socketId: string | null;
+	user: any | undefined;
+	header: string | undefined;
+	socketId: string | undefined;
+	setHeader: any,
+	setSocketId: any
 }
 
 const AppContext = React.createContext({});
 
 export class AppProvider extends Component {
 	public state = {
-		user: null,
-		header: 'M.E.R.N Drink Receipes',
-		socketId: null
+		user: undefined,
+		header: 'M.E.R.N Receipes',
+		socketId: undefined
 	};
 
 	constructor(props: any) {
@@ -46,7 +48,7 @@ export class AppProvider extends Component {
 type Omit<T, K extends keyof T> = Pick<T, Exclude<keyof T, K>>;
 
 export function withAppContext<
-	P extends { appContext?: IAppContext },
+	P extends { appContext?: IAppContext},
 	R = Omit<P, "appContext">
 >(
 	Component: React.ComponentClass<P> | React.StatelessComponent<P>
